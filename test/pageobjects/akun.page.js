@@ -27,9 +27,9 @@ class akunPage {
       const version = process.env.APP_VERSION;  // Misalnya, versi aplikasi diambil dari environment variable
 
       if (version === 'dev') {
-          return $("~MFJxxxxxxx");
+          return $("~MFG12B1CA8");
       } else if (version === 'stg' || version === 'beta') {
-          return $("~MFIxxxxxxxx");
+          return $("~MFJRB979AU");
       } else {
           throw new Error('Version not recognized!');
       }
