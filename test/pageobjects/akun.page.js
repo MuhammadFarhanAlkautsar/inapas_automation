@@ -132,7 +132,7 @@ class akunPage {
       }
 
       get kebijakanPrivasiScreen() {
-        return $('android=new UiSelector().text("Kebijakan Privasi").instance(1)');
+        return $('//android.webkit.WebView[@text="Kebijakan Privasi | INApas"]');
       }
 
       async handleBrowserSelection() {

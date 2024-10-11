@@ -9,8 +9,12 @@
       return $("~Aktifkan Perangkat");
     }
 
+    get loginButton() {
+      return $("~Login");
+    }
+
     get bantuanIcon() {
-      return $('//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.ImageView[2]');
+      return $('//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.ImageView[1]');
     }
   
     get melanjutkanOnBoardingPopUp() {
@@ -29,6 +33,10 @@
       return $("~Lanjutkan");
     }
 
+    get authenticationRequired() {
+      return $('//android.widget.TextView[@resource-id="com.android.systemui:id/title"]');
+    }
+
     get kembaliButton() {
       return $("~Kembali");
     }
@@ -38,15 +46,13 @@
     }
 
     get splash() {
-      return $("~Ikuti langkah-langkah untuk verifikasi data diri Anda di INApas.");
+      return $("~Kunci untuk mengakses berbagai layanan dalam genggaman.");
     }
 
     get popupError() {
       return $("~Terjadi kesalahan\nMohon coba lagi\nOK");
     }
 
-
-  
     async clickMulaiVerifikasi() {
       await this.mulaiVerifikasiButton.click();
       // return verifikasiDataDiriPage;
@@ -93,6 +99,11 @@
   
     async clickMulaiKembali() {
       await this.mulaiKembaliButton.click();
+      // return verifikasiDataDiriPage;
+    }
+
+    async clickLogin() {
+      await this.loginButton.click();
       // return verifikasiDataDiriPage;
     }
 

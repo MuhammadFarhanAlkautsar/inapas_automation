@@ -13,6 +13,14 @@ class SyaratKetentuanPage {
     return $("~Syarat dan Ketentuan");
   }
 
+  get kebijakanPrivasi() {
+    return $("~kebijakan privasi dan perjanjian pelanggan ");
+  }
+
+  get kebijakanPrivasiScreen() {
+    return $('android=new UiSelector().text("Kebijakan Privasi").instance(1)');
+  }
+
   get checkbox1() {
     return $('android=new UiSelector().className("android.widget.CheckBox").instance(0)');
   }

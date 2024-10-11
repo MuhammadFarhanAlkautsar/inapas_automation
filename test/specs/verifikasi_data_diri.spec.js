@@ -55,8 +55,8 @@ export const verifikasiDataDiriTests = () => {
             await SplashPage.clickMulaiVerifikasi();
     
             // Jika ada pop-up untuk melanjutkan onboarding, klik tombol Lanjutkan
-            // await SplashPage.melanjutkanOnBoardingPopUp.isDisplayed();
-            // await SplashPage.clickLanjutkan();
+            await SplashPage.melanjutkanOnBoardingPopUp.isDisplayed();
+            await SplashPage.clickLanjutkan();
     
             await driver.pause(500);
     
